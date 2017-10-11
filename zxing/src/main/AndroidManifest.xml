@@ -158,21 +158,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".history.HistoryActivity"
-            android:label="@string/history_title"
-            android:stateNotNeeded="true" />
-        <activity
             android:name=".share.BookmarkPickerActivity"
             android:label="@string/bookmark_picker_name"
             android:stateNotNeeded="true" />
         <activity
             android:name=".share.AppPickerActivity"
             android:label="@string/app_picker_name"
-            android:stateNotNeeded="true" />
-        <activity
-            android:name=".HelpActivity"
-            android:label="@string/menu_help"
-            android:screenOrientation="user"
             android:stateNotNeeded="true" />
     </application>
 

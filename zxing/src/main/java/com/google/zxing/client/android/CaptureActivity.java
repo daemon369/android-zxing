@@ -55,7 +55,6 @@ import com.google.zxing.ResultMetadataType;
 import com.google.zxing.ResultPoint;
 import com.google.zxing.client.android.camera.CameraManager;
 import com.google.zxing.client.android.clipboard.ClipboardInterface;
-import com.google.zxing.client.android.history.HistoryActivity;
 import com.google.zxing.client.android.history.HistoryItem;
 import com.google.zxing.client.android.history.HistoryManager;
 import com.google.zxing.client.android.result.ResultButtonListener;
@@ -367,16 +366,8 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
             intent.setClassName(this, ShareActivity.class.getName());
             startActivity(intent);
 
-        } else if (i == R.id.menu_history) {
-            intent.setClassName(this, HistoryActivity.class.getName());
-            startActivityForResult(intent, HISTORY_REQUEST_CODE);
-
         } else if (i == R.id.menu_settings) {
             intent.setClassName(this, PreferencesActivity.class.getName());
-            startActivity(intent);
-
-        } else if (i == R.id.menu_help) {
-            intent.setClassName(this, HelpActivity.class.getName());
             startActivity(intent);
 
         } else {
